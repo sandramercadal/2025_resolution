@@ -22,8 +22,17 @@
       href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Poppins:wght@100&display=swap"
       rel="stylesheet"
     />
+    <link />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Tourney:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Tourney:ital,wght@0,100..900;1,100..900&family=Twinkle+Star&display=swap"
       rel="stylesheet"
     />
 
@@ -34,11 +43,6 @@
   </head>
 
   <style>
-    body,
-    html {
-      height: 100%;
-    }
-
     .hero {
       width: 100%;
       height: 90%;
@@ -47,31 +51,119 @@
         url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542");
       background-position: center;
       padding: 20px;
+      text-align: center;
     }
 
- 
     h1 {
-      font-family: "Poiret One", sans-serif;
-      font-weight: 400;
+      font-family: "Tourney", sans-serif;
       color: whitesmoke;
       font-size: 65px;
       text-align: center;
+      margin-top: 30px;
     }
-    p{
+    p {
       color: whitesmoke;
       text-align: center;
+      font-size: 20px;
+      margin-top: 50px;
+      letter-spacing: 3px;
+    }
+
+    html {
+      font-size: 45px;
+    }
+    .moving-letters {
+      font-family: "Tourney", sans-serif;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+      font-size: 44px;
+      display: flex;
+      height: 100vh;
+    }
+
+    .moving-letters span {
+      height: 2.3rem;
+      color: #f8b2aa;
+      animation: moveUp 10s linear infinite;
+    }
+
+    @keyframes moveUp {
+      0% {
+        transform: translateY(0);
+      }
+      5% {
+        transform: translateY(0);
+      }
+      15% {
+        transform: translateY(-2.3rem);
+      }
+      25% {
+        transform: translateY(-2.3rem);
+      }
+      35% {
+        transform: translateY(-4.6rem);
+      }
+      45% {
+        transform: translateY(-4.6rem);
+      }
+      55% {
+        transform: translateY(-6.9rem);
+      }
+      65% {
+        transform: translateY(-6.9rem);
+      }
+      75% {
+        transform: translateY(-9.2rem);
+      }
+      95% {
+        transform: translateY(-9.2rem);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    .studybuddy {
+      background-color: #f8b2aa;
+    }
+    .studybuddy h2 {
+      font-size: 45px;
+      font-family: "Chakra Petch", sans-serif;
+      text-align: center;
+      padding-top: 30px;
+    }
+
+    .footer {
+      background-color: #051b32;
+      color: whitesmoke;
     }
   </style>
 
   <body>
-   
-      <body>
-     <div class="hero">
-      <p> ⚪ 2025 Resolution  ⚪</p>
-          <h1>Conquer JavaScript</h1>
-     </div>
-            
-
-       
+    <div class="hero">
+      <p>⚪ 2025 Resolution ⚪</p>
+      <h1>Conquer JavaScript</h1>
+      <div class="moving-letters">
+        <span style>booleans</span>
+        <span style>operators</span>
+        <span style>variables</span>
+        <span style>tertiary operators</span>
+        <span style>arrays</span>
+        <span style>loops</span>
+        <span style>🚀</span>
+      </div>
+    </div>
+    <div class="studybuddy">
+      <h2>
+        Calling all cosmic coders: study with me and let's shoot for the stars!"
+      </h2>
+      cards here with questions and answers on the reverse
+    </div>
+    <div class="footer">
+      <h2>coded by</h2>
+      xyz
+    </div>
   </body>
 </html>
