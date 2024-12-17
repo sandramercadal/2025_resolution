@@ -75,16 +75,16 @@
     .moving-letters {
       font-family: "Tourney", sans-serif;
       flex-direction: column;
+      display: flex;
       overflow: hidden;
       padding: 0;
       margin: 0;
       font-size: 44px;
-      display: flex;
       height: 100vh;
     }
 
     .moving-letters span {
-      height: 2.3rem;
+      height: 2rem;
       color: #f8b2aa;
       animation: moveUp 10s linear infinite;
     }
@@ -93,31 +93,19 @@
       0% {
         transform: translateY(0);
       }
-      5% {
+      10% {
         transform: translateY(0);
-      }
-      15% {
-        transform: translateY(-2.3rem);
       }
       25% {
         transform: translateY(-2.3rem);
       }
-      35% {
-        transform: translateY(-4.6rem);
-      }
       45% {
         transform: translateY(-4.6rem);
-      }
-      55% {
-        transform: translateY(-6.9rem);
       }
       65% {
         transform: translateY(-6.9rem);
       }
-      75% {
-        transform: translateY(-9.2rem);
-      }
-      95% {
+      85% {
         transform: translateY(-9.2rem);
       }
       100% {
@@ -130,15 +118,22 @@
     }
     .studybuddy h2 {
       font-size: 45px;
-      font-family: "Chakra Petch", sans-serif;
+      font-family: "Tourney", sans-serif;
       text-align: center;
       padding-top: 30px;
     }
 
     .footer {
+      padding-top: 10px;
+      padding-bottom: 10px;
       background-color: #051b32;
       color: whitesmoke;
+      text-align: center;
+      font-size: 18px;
+      font-family: "chakra petch";
     }
+
+   
   </style>
 
   <body>
@@ -146,24 +141,43 @@
       <p>⚪ 2025 Resolution ⚪</p>
       <h1>Conquer JavaScript</h1>
       <div class="moving-letters">
-        <span style>booleans</span>
-        <span style>operators</span>
-        <span style>variables</span>
-        <span style>tertiary operators</span>
-        <span style>arrays</span>
-        <span style>loops</span>
-        <span style>🚀</span>
+        <span>booleans</span>
+        <span>operators</span>
+        <span>variables</span>
+        <span>tertiary operators</span>
+        <span>arrays</span>
+        <span>loops</span>
+        <span>🚀</span>
       </div>
     </div>
     <div class="studybuddy">
       <h2>
-        Calling all cosmic coders: study with me and let's shoot for the stars!"
+        Calling all cosmic coders<br />study with me and let's shoot for the
+        stars! 🪐
       </h2>
-      cards here with questions and answers on the reverse
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+      et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+       commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+       pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+   
     </div>
+         
+  
+   
     <div class="footer">
-      <h2>coded by</h2>
-      xyz
+          ~ <strong> Coded by </strong
+          ><a href="https://www.linkedin.com/in/sandramercadal/" target="_blank"
+            >Sandra Mercadal </a
+          >using HTML5, CSS & JavaScript. <strong>Open-sourced </strong>on
+          <a
+            href="https://github.com/sandramercadal/Fascinators"
+            target="_blank"
+            ><strong>Github</strong></a
+          >
+          ~
+    <br>
+      </footer>
     </div>
+
   </body>
 </html>
