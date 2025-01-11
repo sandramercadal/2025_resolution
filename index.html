@@ -77,7 +77,7 @@
     h4 {
       color: whitesmoke;
       text-align: center;
-      font-size: 20px;
+      font-size: 23px;
       margin-top: 75px;
       letter-spacing: 4px;
       animation-name:glow;
@@ -181,14 +181,15 @@
             justify-content: center;
             opacity: 0;
             transition: opacity 0.3s;
-            font-size: 25px;
+            font-size: 19px;
+            padding: 10px;
         }
         .card:hover .overlay {
             opacity: 0.9;
         }
 
         .text-on-image {
-          padding-top: 50px;
+          padding-top: 5px;
           position: absolute;
           position: absolute;
             top: 0;
@@ -200,16 +201,13 @@
           color: white;
           font-weight: bold;
           font-family:'Courier New', Courier, monospace;
-          font-size: 20px;
+          font-size: 15px;
         }
         .question {
-          font-size: 30px;
+          font-size: 20px;
           margin: 0 auto;
         }  
-  .emoji {
-    padding-top: 10px;
-    font-size: 40px;
-  }
+
 .card-container h3 {
   font-size: 18px;
   padding-top: 10px;
@@ -275,14 +273,13 @@
        <div class="card-container">
                     <div class="card">
                         <div class="text-on-image">
-                        
                           <p class="question"><strong>Question 1 </strong></p>
                           <br>What is the output? A, B, C or D?
                           <br>
                           <p>console.log ('I want to go to space in a rocket' [0]);
-                         <br> 
-                         <div class="emoji">🪐</div>
-                          <br>
+                        <br>
+                         🪐
+                        
                           <p>A: "I want to go to space in a rocket" 
                              <br>B: "I" 
                               <br>C: Undefined 
@@ -290,43 +287,51 @@
                           </p>
                         </div>
                     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
-                        <div class="overlay">Answer: B <br>The bracket notation is looking for a specific character in this string. The first character in the string
-                        is always calculated as the zero [0] so the result is "I".</div>
+                        <div class="overlay">Answer: B <br>The bracket notation is looking for a specific zero [0] character in this string. The first character in the string
+                        is always calculated as the zero so the result is "I".</div>
                     </div>
                     
                     <div class="card">
                       <div class="text-on-image">
                          <p class="question"><strong>Question 2 </strong></p>
-                          <br>What is the output? A, B, or C or D?
-                          <p>const sum = [ 1 + 2, 1 * 2, 1 / 2];  
+                          <br>What is the output? A, B, C or D?
+                          <p>const sum = [ 1 + 5, 1 * 2, 1 / 2];  
                             <br>console.log (sum);
-                         <br> 
-                         <div class="emoji">🪐</div>
-                          <br>
-                          <p>A: [" 1 + 2", 1 * 2, 1 / 2]
-                             <br>B: [ "12", 2, 0.5] 
+                       <br>
+                      🪐
+                          <p>A: ["1 + 5", 1 * 2, 1 / 2]
+                             <br>B: [ "15", 2, 0.5] 
                                <br>C: [1, 1, 1]
-                              <br>D: [3, 2, 0.5]
+                              <br>D: [6, 2, 0.5]
                           </p>
                        </div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 2">
-                        <div class="overlay">Answer D: <br>Arrays can hold any value i.e numbers, strings, dates, objects etc. 
-                          <br> Here 1 + 2 returns 3, 1 * 2 returns 2 and 1 / 2 returns 0.5. </div>
+                        <div class="overlay">Answer: D <br>Arrays can hold any value i.e numbers, strings, dates, objects etc. 
+                          <br> Here 1 + 5 returns 6, 1 * 2 returns 2 and 1 / 2 returns 0.5. </div>
             </div>
             </div>
 
                 <div class="card-container">
                     <div class="card">
-                        <div class="text-on-image"><br>Question 3 Whats the output?
-                          console.log ('I want to go to space in a rocket' [0]);
-                          <br><h3>A: I want to go to space in a rocket B: I C: Undefined D: " " </h3></div>
+                        <div class="text-on-image">
+                          <p class="question"><strong>Question 3 </strong></p>
+                          <br>Why will this Ternary Operator return an exexpected string error?
+                           <br>
+                      🪐
+                          
+                          <br><p>const examTarget = 80<br>
+                          const examScore = 70 "Excellent work" : "Keep studying!"
+                        <br>
+                      console.log (examScore)</p></div>
+                      
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
-                <div class="overlay">Answer: The bracket notation is being used to looking for a specific character. The fircthcharacter in the string
-                  has Zero is wlays the first</div>
+                <div class="overlay">Answer: Missing ? <br>A ternary operator always gives the true expression and false expression using the symbols ? and : so the true expression was missing the symbol ?
+                  <br> 
+                  const examScore = 70 ? "Excellent work" : "Keep studying!"</div>
                     </div>
                     
                     <div class="card">
-                      <div class="text-on-image"><br>Question 4 
+                      <div class="text-on-image">Question 4 <br>
                         <br><h3>Words on Image ghdghjadghsagdhsagdhasgd ghdagdhag ghdsa  ghg</h3></div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 2">
                         <div class="overlay">Overlay Text 4</div>
