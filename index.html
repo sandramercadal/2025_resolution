@@ -74,7 +74,7 @@
       text-align: center;
       margin-top: 30px;
     }
-    p {
+    h4 {
       color: whitesmoke;
       text-align: center;
       font-size: 20px;
@@ -90,8 +90,6 @@
   from{text-shadow:0px 0px 5px #fff,0px 0px 5px #f8b2aa;}
   to{text-shadow:0px 0px 20px #fff,0px 0px 20px #f8b2aa;}
 }
-
-
 
 
     html {
@@ -176,26 +174,42 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(0, 0, 0, 0.9);
             color: #f8b2aa;
             display: flex;
             align-items: center;
             justify-content: center;
             opacity: 0;
             transition: opacity 0.3s;
+            font-size: 25px;
         }
         .card:hover .overlay {
-            opacity: 8;
+            opacity: 0.9;
         }
 
         .text-on-image {
+          padding-top: 50px;
           position: absolute;
-          text-align: center;
+          position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+             align-items: center;
+            justify-content: center; 
           color: white;
-          font-size: 17px;
           font-weight: bold;
           font-family:'Courier New', Courier, monospace;
+          font-size: 20px;
         }
+        .question {
+          font-size: 30px;
+          margin: 0 auto;
+        }  
+  .emoji {
+    padding-top: 10px;
+    font-size: 40px;
+  }
 .card-container h3 {
   font-size: 18px;
   padding-top: 10px;
@@ -239,7 +253,7 @@
           <div>Quiz</div>
           <div>Resolution</div>
         </div>
-      <p> 2025 Resolution </p>
+      <h4> 2025 Resolution </h4>
       <h1>Conquer JavaScript</h1>
       <div class="moving-letters">
         <span>booleans</span>
@@ -253,32 +267,59 @@
     </div>
 
     <div class="studybuddy">
-     
+      <h2>
+        Calling all cosmic coders<br />study with me and let's conquer this mission! 🪐
+      </h2>
 
                    
        <div class="card-container">
                     <div class="card">
-                        <div class="text-on-image"><br>Question 3 Whats the output?
-                          console.log ('I want popcorn and chips' [0]);
-                          <br><h3>A: I want popcorn and chips B: I C: Undefined D: " " </h3></div>
-                        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
-                <div class="overlay">Answer: The bracket notation is being used to looking for a specific character. The fircthcharacter in the string
-                  has Zero is wlays the first</div>
+                        <div class="text-on-image">
+                        
+                          <p class="question"><strong>Question 1 </strong></p>
+                          <br>What is the output? A, B, C or D?
+                          <br>
+                          <p>console.log ('I want to go to space in a rocket' [0]);
+                         <br> 
+                         <div class="emoji">🪐</div>
+                          <br>
+                          <p>A: "I want to go to space in a rocket" 
+                             <br>B: "I" 
+                              <br>C: Undefined 
+                               <br>D: " " 
+                          </p>
+                        </div>
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
+                        <div class="overlay">Answer: B <br>The bracket notation is looking for a specific character in this string. The first character in the string
+                        is always calculated as the zero [0] so the result is "I".</div>
                     </div>
                     
                     <div class="card">
-                      <div class="text-on-image"><br>Question 4 
-                        <br><h3>Words on Image ghdghjadghsagdhsagdhasgd ghdagdhag ghdsa  ghg</h3></div>
+                      <div class="text-on-image">
+                         <p class="question"><strong>Question 2 </strong></p>
+                          <br>What is the output? A, B, or C or D?
+                          <p>const sum = [ 1 + 2, 1 * 2, 1 / 2];  
+                            <br>console.log (sum);
+                         <br> 
+                         <div class="emoji">🪐</div>
+                          <br>
+                          <p>A: [" 1 + 2", 1 * 2, 1 / 2]
+                             <br>B: [ "12", 2, 0.5] 
+                               <br>C: [1, 1, 1]
+                              <br>D: [3, 2, 0.5]
+                          </p>
+                       </div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 2">
-                        <div class="overlay">Overlay Text 4</div>
+                        <div class="overlay">Answer D: <br>Arrays can hold any value i.e numbers, strings, dates, objects etc. 
+                          <br> Here 1 + 2 returns 3, 1 * 2 returns 2 and 1 / 2 returns 0.5. </div>
             </div>
             </div>
 
                 <div class="card-container">
                     <div class="card">
                         <div class="text-on-image"><br>Question 3 Whats the output?
-                          console.log ('I want popcorn and chips' [0]);
-                          <br><h3>A: I want popcorn and chips B: I C: Undefined D: " " </h3></div>
+                          console.log ('I want to go to space in a rocket' [0]);
+                          <br><h3>A: I want to go to space in a rocket B: I C: Undefined D: " " </h3></div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
                 <div class="overlay">Answer: The bracket notation is being used to looking for a specific character. The fircthcharacter in the string
                   has Zero is wlays the first</div>
@@ -296,7 +337,7 @@
               <span
                 class="typer"
                 id="main"
-                data-words="Practise builds confidence ☄️, Practise is a step in the right direction☄️, Practise...practise... practise ☄️ "
+                data-words="Practise builds confidence ☄️, Practise builds resilience☄️, Practising is fun ☄️ "
                 data-delay="90"
                 data-deleteDelay="999"
                 data-colors="#f8b2aa"
@@ -321,13 +362,3 @@
 
   </body>
 </html>
-    <h2>
-        Calling all cosmic coders<br />study with me and let's conquer this mission! 🪐
-      </h2>
-Question 2 <br><h3>What's the output - A, B or C?<br>const list = [ 1 + 2, 1 * 2, 1 / 2]; <br> 
-                <br>console.log (list);
-                <br>
-                    <ul></ul>A. 10<br>B. 5 <br> or C. Undefined 
-Question 1<br><h3>What's the output - A, B or C?<br>var num = 10; <br> var numb =5; <br>console.log (num);
-                <br>
-             <ul></ul>A. 10<br>B. 5 <br> or C. Undefined 
