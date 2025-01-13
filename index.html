@@ -47,13 +47,19 @@
 
   <style>
 
+    :root {
+  --primary-color: #;
+  --secondary-color: #;
+  --accent2-color: #;
+  --accent-color: #;
+}
+
    .header {
     display: flex;
     justify-content: space-around;
     color: lightgoldenrodyellow;
     font-size: 24px;
     font-family: "Tourney", sans-serif;
-    
    }
 
     .hero {
@@ -154,7 +160,6 @@
     justify-content: flex-start; /* Aligns cards to the left */
     overflow-x: auto; /* Allows scrolling if cards exceed the width */
     padding-top: 30px;
-    padding: 10px;
     
 }
 
@@ -196,16 +201,17 @@
             left: 0;
             right: 0;
             bottom: 0;
-             align-items: center;
-            justify-content: center; 
+          align-items: center;
+          justify-content: center; 
           color: yellow;
           font-weight: bold;
           font-family:'Courier New', Courier, monospace;
-          font-size: 17px;
+          font-size: 10.5px;
         }
         .question {
           font-size: 22px;
           margin: 0 auto;
+          color: #fff;
         }  
 
 .card-container h3 {
@@ -216,7 +222,7 @@
         padding-top: 80px;
         padding-bottom: 30px;
         text-align: center;
-        font-size: 48px;
+        font-size: 40px;
         background-color: #051b32;
         font-family: "Tourney", sans-serif;
       }
@@ -238,8 +244,40 @@
     .card {
         max-width: 100%; /* Full width on smaller screens */
     }
+  }
+    @media (max-width: 600px) {
+    .card-container {
+        flex-direction: column; /* Stacks the cards vertically */
+    }
+  }
+    @media (max-width: 600px) {
+    .studybuddy h2 {
+          font-size: 25px;
+
+  }
 }
-   
+  @media (max-width: 600px) {
+    .text-on-image {
+          font-size: 10px;
+    }
+  }
+    @media (max-width: 600px) {
+    .typerwriter {
+          font-size: 20px;
+    }
+  }
+    @media (max-width: 600px) {
+    .header {
+          font-size: 17px;
+  }
+    }
+    
+   @media (max-width: 600px) {
+    .h4 {
+          font-size: 20px;
+  }}
+
+
   </style>
    
   <body>
@@ -247,10 +285,12 @@
      
  <div class="hero">
         <div class ="header">
-          <div>Home</div>
-          <div>Quiz</div>
-          <div>Resolution</div>
-        </div>
+            <a class="nav-link" href="#home" class="jump-to">Home</a>
+              <a class="nav-link" href="#quiz" class="jump-to">Quiz</a>
+                <a class="nav-link" href="#resolution" class="jump-to">Resolution</a>
+
+          
+        </div id="home">
       <h4> 2025 Resolution </h4>
       <h1>Conquer JavaScript</h1>
       <div class="moving-letters">
@@ -264,7 +304,7 @@
       </div>
     </div>
 
-    <div class="studybuddy">
+    <div class="studybuddy" id="quiz">
       <h2>
         Calling all cosmic coders<br />study with me and let's conquer this mission! 🪐
       </h2>
@@ -279,7 +319,6 @@
                           <p>console.log ('I want to go to space in a rocket' [0]);
                         <br>
                          🪐
-                        
                           <p>A: "I want to go to space in a rocket" 
                              <br>B: "I" 
                               <br>C: Undefined 
@@ -315,14 +354,15 @@
                     <div class="card">
                         <div class="text-on-image">
                           <p class="question"><strong>Question 3 </strong></p>
-                          <br>Why will this Ternary Operator return an exexpected string error?
+                          <br>Why will this Conditional (Ternary) Operator return an exexpected string error?
                            <br>
-                      🪐
-                          
-                          <br><p>const examTarget = 80<br>
+                      🪐 
+                          <p>const examTarget = 80<br>
                           const examScore = 70 "Excellent work" : "Keep studying!"
                         <br>
-                      console.log (examScore)</p></div>
+                      console.log (examScore)
+                    </p>
+                  </div>
                       
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
                 <div class="overlay">Answer: It is missing the ? <br>A ternary operator always gives the true 
@@ -332,19 +372,31 @@
                   const examScore = 70 ? "Excellent work" : "Keep studying!"</div>
                     </div>
                     
-                    <div class="card">
-                      <div class="text-on-image">Question 4 <br>
-                        <br><h3>Words on Image ghdghjadghsagdhsagdhasgd ghdagdhag ghdsa  ghg</h3></div>
+                     <div class="card">
+                      <div class="text-on-image">
+                         <p class="question"><strong>Question 4 </strong></p>
+                          <br>What is the output? A, B, C or D?
+                          <p>cx;  
+                            <br>console.log (x);
+                       <br>
+                      🪐
+                          <p>A: xx
+                             <br>B: xx 
+                               <br>C: xx
+                              <br>D: xx
+                          </p>
+                       </div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 2">
-                        <div class="overlay">Overlay Text 4</div>
+                        <div class="overlay">Answer: xx <br>xxxx
+                          <br> Here 1xxx</div>
             </div>
             </div>
     </div>
-         <div class="typerwriter">
+         <div class="typerwriter" id="resolution">
               <span
                 class="typer"
                 id="main"
-                data-words="Practise builds confidence ☄️, Practise builds resilience☄️, Practising is fun ☄️ "
+                data-words="Practise builds confidence ☄️, Practise sharpens your skills☄️, Practising is fun ☄️ "
                 data-delay="90"
                 data-deleteDelay="999"
                 data-colors="#f8b2aa"
