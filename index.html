@@ -48,16 +48,16 @@
   <style>
 
     :root {
-  --primary-color: #;
-  --secondary-color: #;
-  --accent2-color: #;
-  --accent-color: #;
+  --primary-color: #f8b2aa;
+  --secondary-color: lightgoldenrodyellow;
+  --accent2-color: whitesmoke;
+  --accent-color: #051b32;
 }
 
    .header {
     display: flex;
     justify-content: space-around;
-    color: lightgoldenrodyellow;
+    color: var(--secondary-color);
     font-size: 24px;
     font-family: "Tourney", sans-serif;
    }
@@ -75,13 +75,13 @@
 
     h1 {
       font-family: "Tourney", sans-serif;
-      color: whitesmoke;
-      font-size: 65px;
+      color: var(--accent2-color);
+      font-size: 60px;
       text-align: center;
       margin-top: 30px;
     }
     h4 {
-      color: whitesmoke;
+      color: var(--accent2-color);
       text-align: center;
       font-size: 23px;
       margin-top: 75px;
@@ -114,7 +114,7 @@
 
     .moving-letters span {
       height: 2rem;
-      color: #f8b2aa;
+      color: var(--primary-color);
       animation: moveUp 10s linear infinite;
     }
 
@@ -143,7 +143,7 @@
     }
 
     .studybuddy {
-      background-color: #f8b2aa;
+      background-color: var(--primary-color);
       padding-top: 30px;
       padding-bottom: 30px;
       
@@ -157,14 +157,14 @@
 
   .card-container {
     display: flex;
-    justify-content: flex-start; /* Aligns cards to the left */
+    justify-content: flex-start; /* Aligns cards to left */
     overflow-x: auto; /* Allows scrolling if cards exceed the width */
     padding-top: 30px;
     
 }
 
 .card {
-    margin: 10px; /* between the cards */
+    margin: 10px; /* between cards */
     text-align: center;  
 }
         .card img {
@@ -180,7 +180,7 @@
             right: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.9);
-            color: #f8b2aa;
+            color: var(--primary-color);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -211,7 +211,7 @@
         .question {
           font-size: 22px;
           margin: 0 auto;
-          color: #fff;
+          color: var(--accent2-color);
         }  
 
 .card-container h3 {
@@ -223,21 +223,21 @@
         padding-bottom: 30px;
         text-align: center;
         font-size: 40px;
-        background-color: #051b32;
+        background-color: var(--accent-color);
         font-family: "Tourney", sans-serif;
       }
 
   .footer {
       padding-top: 20px;
       padding-bottom: 20px;
-      background-color: #051b32;
+      background-color: var(--accent-color);
       color: palegoldenrod;
       text-align: center;
       font-size: 16px;
       font-family: "chakra petch";
     }
     .footer a {
-      color: whitesmoke;
+      color: var(--accent2-color);
     }
 
     @media (max-width: 600px) {
@@ -319,11 +319,12 @@
                           <p>console.log ('I want to go to space in a rocket' [0]);
                         <br>
                          🪐
-                          <p>A: "I want to go to space in a rocket" 
+                         <br>
+                          A: "I want to go to space in a rocket" 
                              <br>B: "I" 
                               <br>C: Undefined 
                                <br>D: " " 
-                          </p>
+                          
                         </div>
                     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 1">
                         <div class="overlay">Answer: B <br>The bracket notation is looking for a specific zero [0] character in this string. The first character in the string
@@ -338,11 +339,12 @@
                             <br>console.log (sum);
                        <br>
                       🪐
-                          <p>A: ["1 + 5", 1 * 2, 1 / 2]
+                      <br>
+                          A: ["1 + 5", 1 * 2, 1 / 2]
                              <br>B: [ "15", 2, 0.5] 
                                <br>C: [1, 1, 1]
                               <br>D: [6, 2, 0.5]
-                          </p>
+                          
                        </div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 2">
                         <div class="overlay">Answer: D <br>Arrays can hold any value i.e numbers, strings, dates, objects etc. 
@@ -376,19 +378,22 @@
                       <div class="text-on-image">
                          <p class="question"><strong>Question 4 </strong></p>
                           <br>What is the output? A, B, C or D?
-                          <p>cx;  
-                            <br>console.log (x);
+                          <p>Let num = 1;<br>
+                            const list = ['🛸', '🚀', '👩🏿‍🚀', '🛰️'];
+                            <br>
+                            console.log (list [(num += 1)]);
                        <br>
-                      🪐
-                          <p>A: xx
-                             <br>B: xx 
-                               <br>C: xx
-                              <br>D: xx
-                          </p>
+                      
+                      <br>
+                          A: 🛸
+                             <br>B: 🚀 
+                               <br>C: 👩🏿‍🚀
+                              <br>D: 🛰️
                        </div>
                         <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/152/977/original/pexels-felixmittermeier-956981.jpg?1734366542" alt="Question 2">
-                        <div class="overlay">Answer: xx <br>xxxx
-                          <br> Here 1xxx</div>
+                        <div class="overlay">Answer: 👩🏿‍🚀 <br>
+                          <br> The += operator increases 'num' by 1, and 'num' has the initial value of 1. 
+                        1+1 is 2 so the second item on the array is 👩🏿‍🚀 because and array starts at zero.</div>
             </div>
             </div>
     </div>
